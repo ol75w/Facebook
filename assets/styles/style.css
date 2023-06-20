@@ -14,6 +14,19 @@ body {
     font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;;
 }
 
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+
 /* header start */
 
 header {
@@ -80,9 +93,60 @@ nav ul {
     align-items: center;
 }
 
-.profile_section {
-    display: flex;
-    align-items: center;
+nav ul li a{
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 8px;
+    transform: .3s;
+    position: relative;
+}
+
+nav ul li a:hover{
+    background: #4f5050;
+}
+
+nav ul li a::after{
+    display: none;
+    content: attr(data-tag);
+    height: 20px;
+    width: 80px;
+    background: #c9c7c7;
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    text-align: center;
+    color: rgb(20, 18, 18);
+    transform: translateX(-50%);
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+nav ul li a:hover:after{
+    display: block;
 }
 
 
+nav ul li span {
+    color: white;
+    font-size: 35px;
+}
+
+nav ul li:first-child a{
+    padding: 12px 40px;
+    border-bottom: 3px solid #2374E1;
+}
+
+nav ul li:first-child a span {
+    color:  #2374E1;
+}
+
+nav ul li:first-child a:hover{
+    background: unset;
+    border-radius: unset;
+}
+
+nav ul li:first-child a {
+    background: unset;
+    border-radius: unset;
+}
