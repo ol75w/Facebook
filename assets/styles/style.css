@@ -150,3 +150,43 @@ nav ul li:first-child a {
     background: unset;
     border-radius: unset;
 }
+
+
+.profile_section ul li:last-child img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+    /* padding: 5px; */
+}
+
+/* .profile_section ul li:last-child a:hover{
+    background: #4f5050;
+    border-radius: 20px;
+
+} */
+
+.profile_section ul li{
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #4f5050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.profile_section ul li:hover{
+    background: #8b8b8b;
+}
+
+.profile_section ul li span,
+.profile_section ul li i{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
